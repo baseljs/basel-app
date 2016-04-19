@@ -1,0 +1,7 @@
+{
+	"name":"myapp",
+	"branch":"master",
+	"database":"database",
+	"title":"My App",
+	"type":"simple"
+}

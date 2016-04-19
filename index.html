@@ -1,0 +1,46 @@
+<html ng-app="cdg" ng-controller="mainController" >
+<head>
+	<title>{{app.title}}</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+
+	<!-- jQuery -->
+	<script>window.$ = window.jQuery = require('jquery');</script>
+
+	<!-- Bootstrap -->
+	<script src="bootstrap/js/bootstrap.js"></script>
+
+	<!-- Angular -->
+	<script src="node_modules/angular/angular.js"></script>
+	<!-- Angular - Pagination -->
+	<script src="node_modules/angular-utils-pagination/dirPagination.js"></script>
+
+	<!-- App -->
+	<script src="app.js"></script>
+
+	<!-- Controllers -->
+	<script src="controllers/mainController.js"></script>
+	<script src="controllers/pessoaController.js"></script>
+	<script src="controllers/exampleController.js"></script>
+</head>
+<body >
+	<!-- Menu -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#/">
+					{{app.title}}
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li ng-repeat="menu in menus">
+						<a href="#/{{menu.route}}">{{menu.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Onde será carregada a view -->
+	<div ng-view="" class="container"></div>
+</body>
+</html>

@@ -25,7 +25,7 @@ app.controller("CONTROLLER_NAME", function($scope, $location){
 		}
 		$scope.form = {};
 		$scope.list();
-		$('#modalNew').modal('hide');
+		$('#CONTROLLER_NAME').modal('hide');
 	}
 
 	// Cancel form
@@ -36,7 +36,7 @@ app.controller("CONTROLLER_NAME", function($scope, $location){
 	//Abrindo para editar
 	$scope.edit = function(data){
 		$scope.form = data;
-		$('#modalNew').modal('show');
+		$('#CONTROLLER_NAME').modal('show');
 	}
 
 	//Excluindo

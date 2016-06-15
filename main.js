@@ -20,7 +20,7 @@ app.on('ready', function() {
   mainWindow.loadURL('file://' + __dirname + '/index.html');
 
   // aber o DevTools. (console, inspecionar elemento, etc)
-  // mainWindow.webContents.openDevTools(); 
+  mainWindow.webContents.openDevTools(); 
 
   // Evento emitido quando a janela é fechada, usado para destruir instancia.
   mainWindow.on('closed', function() {

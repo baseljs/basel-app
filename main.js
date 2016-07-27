@@ -1,6 +1,6 @@
 var electron = require('electron');
-var app = require('app');
-var BrowserWindow = require('browser-window');
+var app = electron.app;
+var BrowserWindow = electron.BrowserWindow;
 
 // referência global para manter a instância da janela até que sejam fechadas pelo usuário então ele irá ser fechado quando o JavaScript fizer Garbage collection
 var mainWindow = null;

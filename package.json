@@ -1,6 +1,6 @@
 {
   "name": "basel-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Base app for basel",
   "main": "main.js",
   "repository": {
@@ -23,7 +23,7 @@
     "build": "electron-packager . --all"
   },
   "devDependencies": {
-    "electron-prebuilt": "latest",
+    "electron-prebuilt": "1.4.13",
     "electron-packager":"^6.0.0",
     "basel-cli":"*",
     "jquery":"^2.2.2",

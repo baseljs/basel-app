@@ -26,7 +26,7 @@
     "electron-prebuilt": "1.4.13",
     "electron-packager":"6.0.0",
     "basel-cli":"*",
-    "jquery":"2.2.2",
+    "jquery":"latest",
     "angular": "1.5.1",
     "angular-route": "1.5.1",
     "angular-utils-pagination":"0.11.0"
